@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Join Us</title>
+
+    <link rel="icon" type="image/x-icon" href="images/lumin_logo.webp">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/25988d8a11.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">   
+</head>
+
+<body>
+    <header></header>
+
+    <nav>
+        <a class="skip-to-content" href="#main">Skip to Main Content</a>
+
+        <a href="index.html"><img id="lol_logo" src="images/logo.png" alt="Lord of Light logo"></a>
+        
+        <a id="ric_logo" href="https://www.reconcilingworks.org/"><img src="images/ric_logo.png" alt="Reconciling in Christ progress pride logo"></a>
+
+        <button onclick="dropdown()"><i id="menu_icon" class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></button>
+
+        <ul id="dropdown_menu">
+            <li><img src="images/filler.png"></li>
+            <li><a href="index.html">Home</a></li>
+            
+            <li><img src="images/lumin_logo.webp"></li>
+            <li><a class="in_use" href="happening.html">Join Us</a></li>
+
+            <li><img src="images/filler.png"></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <h1>You already belong here.</h1>
+        <p id="happenings_blurb">Join us at our weekly events, including Sunday evening worship. In addition to weekly events, we also host small groups, community events, and service projects.</p><hr>
+
+        <h2>Weekly Events</h2>
+        <div class="weekly_events">
+            <!--Reference for flipcards: https://www.w3schools.com/howto/howto_css_flip_card.asp-->
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/worship.webp" alt="Handmade communion challace" style="width:300px;height:300px">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Join us for worship and dinner on Sunday evenings! Our service follows the liturgical tradition, but we mix styles of music. Come as you are and in whatever attire makes you comfortable. Dinner follows directly after church, always with vegan options.</p>
+                  </div>
+                </div>
+
+                <h3>Worship & Dinner</h3>
+                <h4>Sundays @ 5pm</h4>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/bagel.webp" alt="Bagels on wood cutting board" style="width:300px;height:300px">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Join Pastor Elizabeth on Tuesday mornings for breakfast and casual conversation! Feel free to drop in at any time during this event.</p>
+                  </div>
+                </div>
+
+                <h3>Bagel Tuesday</h3>
+                <h4>Tuesdays @ 9:30-11:30am</h4>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="images/faithand.webp" alt="Bagels on wood cutting board" style="width:300px;height:300px">
+                  </div>
+                  <div class="flip-card-back">
+                    <p>Join us at the fire for s'mores and conversation! Each week we discuss the intersection of faith and a variety of topics - from food to sexuality to service.</p>
+                  </div>
+                </div>
+
+                <h3>Faith &</h3>
+                <h4>Wednesdays @ 8pm</h4>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="social_medias">
+            <a href="https://www.instagram.com/lcm.um/"><img src="images/instagram.png" alt="instagram icon" width=30px></a>
+
+            <a href="https://www.facebook.com/lcm.um"><img src="images/facebook.png" alt="facebook icon" width=30px></a>
+
+            <a href="https://www.youtube.com/channel/UCOwsixW9NyI1ZeuN78nZnuA"><img src="images/youtube.png" alt="youtube icon" width=30px></a>
+        </div>
+
+        <p>801 S Forest Ave,&nbspAnn Arbor,&nbspMI 48104<br>
+        <a href="mailto:lol-lcm@comcast.com">lol-lcm@comcast.com</a><br>
+        <a href="tel:+17346687622">(734) 668-7622</a></p>
+    </footer>
+
+    <script>
+        function dropdown() {
+            var x = document.getElementById("dropdown_menu");
+            console.log("Yes");
+            if (x.style.display === "none") {
+                x.style.display = "grid";
+            }
+            else {
+                 x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

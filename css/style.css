@@ -1,0 +1,359 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+}
+
+nav{
+    text-align: center;
+    background-color: black;
+    border-top: solid black 15px;
+    border-bottom: solid black 10px;
+}
+
+main{
+    margin: 15px;
+}
+
+#lol_logo{
+    width: 250px;
+    border-bottom: solid black 15px;
+}
+
+#ric_logo{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 60px;
+}
+
+#menu_icon{
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    width: 60px;
+    cursor: pointer;
+}
+
+ul{
+    display: none;
+    grid-template-columns: 20px 200px;
+    column-gap: 10px;
+    justify-items: start;
+    background-color: white;
+    border: solid white 10px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 115%;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+ul img {
+    padding-top: 15%;
+}
+
+.in_use{
+    font-weight: 600;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-top: solid black 10px;
+    border-bottom: solid black 20px;
+}
+
+#social_medias{
+    margin: 5px;
+}
+
+#social_medias > a{
+    padding: 20px;
+}
+
+a.skip-to-content{
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 0.2em;
+    background-color: white;
+    color: black;
+    opacity: 0;
+    width: 125px;
+}
+
+a.skip-to-content:focus{
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+}
+
+h1, h2, h3, h4{
+    line-height: 1.15;
+    font-size: 200%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h2{
+    font-size: 150%;
+}
+
+h3{
+    font-size: 125%;
+}
+
+h4{
+    font-size: 100%;
+}
+
+iframe{
+    width: 100%;
+}
+
+#main a{
+    text-decoration: underline;
+}
+
+hr{
+    border: solid gray 0.75px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#insta_posts{
+    display: grid;
+}
+
+#insta_posts div{
+    justify-self: center;
+    padding-top: 10px;
+    display: none;
+}
+
+#insta_posts > div:first-of-type{
+    display: block;
+}
+
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #f1f1f1;
+    padding-bottom: 70px;
+    margin-bottom: 20px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+/* This container is needed to position the front and back side */
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+  
+/* Position the front and back side */
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+/* Style the front side (fallback if image is missing) */
+.flip-card-front{
+    background-color: #bbb;
+    color: black;
+}
+  
+/* Style the back side */
+.flip-card-back{
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back p{
+    margin: 15px;
+    text-align: left;
+}
+
+.flip-card h3{
+    margin-top: 5px;
+}
+
+.weekly_events{
+    display: grid;
+}
+
+.weekly_events div{
+    justify-self: center;
+}
+
+#happenings_blurb{
+    text-align: center;
+}
+
+#polaroids{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.polaroid{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    justify-self: center;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.polaroid img{
+    object-fit: cover;
+    padding: 12px;
+    padding-bottom: 91px;
+}
+
+.polaroid:hover{
+    z-index: 999;
+    box-shadow: 0 4px 48px 0 rgba(0, 0, 0, 0.2), 0 6px 80px 0 rgba(0, 0, 0, 0.19);
+}
+
+.polaroid:hover > figcaption{
+    color: black;
+}
+
+#p2{
+    rotate: -5deg;
+}
+
+#p1, #p3{
+    display: none;
+}
+
+figcaption{
+    font-family: 'Caveat', cursive;
+    font-size: 160%;
+    margin-top: -90px;
+    margin-left: 10px;
+    color: black;
+    line-height: 0.9;
+    max-width: 200px;
+}
+
+/* Tablet view */
+@media only screen and (min-width: 768px) {
+    #lol_logo{
+        width: 300px;
+    }
+
+    #ric_logo{
+        width: 80px;
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: 20px 185px 20px 150px 20px 200px;
+        max-width: 640px;
+    }
+
+    nav ul{
+        margin: auto;
+    }
+
+    ul li img{
+        justify-items: left;
+    }
+
+    #menu_icon{
+        display: none;
+    }
+    
+    figcaption{
+        color: white;
+        justify-items: right;
+    }
+
+   #p1{
+        display: grid;
+        transform: translateY(15px);
+        rotate: 5deg;
+        justify-self: right;
+    }
+
+    #p1 figcaption{
+        transform: translateY(8px);
+    }
+
+    #p3{
+        display: grid;
+        transform: translateY(-2px);
+        rotate: 10deg;
+        justify-self: left;
+    }
+
+    #p3 figcaption{
+        transform: translateY(6px);
+    }
+
+    #polaroids{
+        grid-template-columns: auto auto auto;
+        margin: auto;
+        max-width: 700px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    main{
+        margin: 20px;
+    }
+
+    #insta_posts{
+        grid-template-columns: auto auto;
+    }
+    
+    #insta_posts div{
+        display: block;
+        justify-self: center;
+    }
+
+    #insta_posts div:last-of-type{
+        display: none;
+    }
+}
+
+/* Desktop view */
+@media only screen and (min-width: 992px) {
+    #insta_posts{
+        grid-template-columns: auto auto auto;
+    }
+    
+    #insta_posts div:last-of-type{
+        display: block;
+    }
+    
+    .weekly_events{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+/*
+@media (prefers-reduced-motion: reduce) {
+    nav h2 {animation: none;}
+    img[src*="gif"] {display: none;}
+    form {animation: none;}
+}
+*/
