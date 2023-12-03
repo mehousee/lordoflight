@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Newsletter</title>
+
+    <link rel="icon" type="image/x-icon" href="images/lumin_logo.webp">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://kit.fontawesome.com/25988d8a11.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">   
+</head>
+
+<body>
+    <header></header>
+
+    <nav>
+        <a class="skip-to-content" href="#main">Skip to Main Content</a>
+
+        <a href="index.html"><img id="lol_logo" src="images/logo.png" alt="Lord of Light logo"></a>
+        
+        <a id="ric_logo" href="https://www.reconcilingworks.org/"><img src="images/ric_logo.png" alt="Reconciling in Christ progress pride logo"></a>
+
+        <button onclick="dropdown()"><i id="menu_icon" class="fa-solid fa-bars fa-2xl" style="color: #ffffff;"></i></button>
+
+        <ul id="dropdown_menu">
+            <li><img src="images/filler.png"></li>
+            <li><a href="index.html">Home</a></li>
+            
+            <li><img src="images/filler.png"></li>
+            <li><a href="happening.html">Join Us</a></li>
+
+            <li><img src="images/lumin_logo.webp"></li>
+            <li><a class="in_use" href="newsletter.html">Newsletter</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <h1>Newsletter</h1>
+        <h2>Read our <a href="lol_newsletter.pdf">latest newsletter</a>. Stay up-to-date with everything Lord of Light!</h2>
+
+        <iframe src="lol_newsletter.pdf" width="800" height="500"></iframe> 
+    </main>
+
+    <footer>
+        <div id="social_medias">
+            <a href="https://www.instagram.com/lcm.um/"><img src="images/instagram.png" alt="instagram icon" width=30px></a>
+
+            <a href="https://www.facebook.com/lcm.um"><img src="images/facebook.png" alt="facebook icon" width=30px></a>
+
+            <a href="https://www.youtube.com/channel/UCOwsixW9NyI1ZeuN78nZnuA"><img src="images/youtube.png" alt="youtube icon" width=30px></a>
+        </div>
+
+        <p>801 S Forest Ave,&nbspAnn Arbor,&nbspMI 48104<br>
+        <a href="mailto:lol-lcm@comcast.com">lol-lcm@comcast.com</a><br>
+        <a href="tel:+17346687622">(734) 668-7622</a></p>
+    </footer>
+
+    <script>
+        function dropdown() {
+            var x = document.getElementById("dropdown_menu");
+            console.log("Yes");
+            if (x.style.display === "none") {
+                x.style.display = "grid";
+            }
+            else {
+                 x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
