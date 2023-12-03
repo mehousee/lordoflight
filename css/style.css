@@ -237,7 +237,7 @@ hr{
 }
 
 #p2{
-    rotate: -5deg;
+    transform: rotate(-5deg);
 }
 
 #p1, #p3{
@@ -290,7 +290,7 @@ figcaption{
    #p1{
         display: grid;
         transform: translateY(15px);
-        rotate: 5deg;
+        transform: rotate(5deg);
         justify-self: right;
     }
 
@@ -301,7 +301,7 @@ figcaption{
     #p3{
         display: grid;
         transform: translateY(-2px);
-        rotate: 10deg;
+        transform: rotate(10deg);
         justify-self: left;
     }
 
